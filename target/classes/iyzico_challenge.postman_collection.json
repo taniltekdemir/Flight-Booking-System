@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "5a3f0704-02e1-4bd9-835b-9a4b658d24a0",
+		"name": "iyzico_challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11840968"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/fligths/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fligths/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fligths",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fligths",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fligths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fligths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fligths",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"flightName\": \"tk302\",\r\n  \"description\": \"ankara-izmir\",\r\n  \"departureTime\": \"2024-11-03\",\r\n  \"arrivalTime\": \"2024-11-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fligths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fligths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fligthPayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"seatId\": 2,\r\n  \"userId\": 555\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fligthPayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fligthPayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

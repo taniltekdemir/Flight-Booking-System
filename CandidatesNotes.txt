@@ -1,0 +1,16 @@
+For question 1.
+* I used pesimistic lock management to prevent more than one user from processing on the same seat at the same time.
+* I wrote an integration test to realize this scenario.
+* Again, I integrated the iyzipay payment system for the first question.
+I used incorrect card information in the payment requests received with 555 UserID in order to realize the incorrect payment situation.
+* We can use Swagger for api testing of related scenarios. You can also find Postman Collection file under /main/resource.
+* You can find the scripts for the database tables I created in /main/resource/db.sql/create-db.sql
+
+
+For Question 2:
+* I used rabbitMQ which is a message-broker management. To use rabbitMq I created a docker-compose.yml file.
+Please run the "docker compose up -d" command in the file directory with the relevant file before starting the project.
+
+* you can reach dashboard page with http://localhost:15672/
+  username ->guest
+  password ->guest
