@@ -40,8 +40,8 @@ public class FlightPaymentService {
     public com.iyzipay.model.Payment iyzipayIntegration(Seat seat, Long userId) {
 
         Options options = new Options();
-        options.setApiKey("sandbox-43yj9GGu2tRjvYstYH4OMMzkARt5qXuA");
-        options.setSecretKey("sandbox-NhAPNXu8vBc4FryWjBWc6kij7uz5dDEK");
+        options.setApiKey("");
+        options.setSecretKey("");
         options.setBaseUrl("https://sandbox-api.iyzipay.com");
 
         CreatePaymentRequest request = new CreatePaymentRequest();
